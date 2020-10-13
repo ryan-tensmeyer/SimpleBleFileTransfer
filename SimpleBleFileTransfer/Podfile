@@ -1,0 +1,22 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'SimpleBleFileTransfer' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for SimpleBleFileTransfer
+
+  target 'SimpleBleFileTransferTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'SimpleBleFileTransferUITests' do
+    # Pods for testing
+  end
+
+  pod 'AppCenter'
+
+
+end

@@ -1,0 +1,783 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E51D227D540C16224B09A3C /* Pods_SimpleBleFileTransfer_SimpleBleFileTransferUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D90895D82211D4F65B2264C /* Pods_SimpleBleFileTransfer_SimpleBleFileTransferUITests.framework */; };
+		5ED1CE502BA9B32CCD6C4BE3 /* Pods_SimpleBleFileTransferTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B13CE907C4B2B99F488B06 /* Pods_SimpleBleFileTransferTests.framework */; };
+		887FB78485DEC61065388E3A /* Pods_SimpleBleFileTransfer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1823BC635D2AF308E02DB0F4 /* Pods_SimpleBleFileTransfer.framework */; };
+		C76385CE24EED46500706E37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76385CD24EED46500706E37 /* AppDelegate.swift */; };
+		C76385D024EED46500706E37 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76385CF24EED46500706E37 /* SceneDelegate.swift */; };
+		C76385D224EED46500706E37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76385D124EED46500706E37 /* ViewController.swift */; };
+		C76385D524EED46500706E37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C76385D324EED46500706E37 /* Main.storyboard */; };
+		C76385D724EED46700706E37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C76385D624EED46700706E37 /* Assets.xcassets */; };
+		C76385DA24EED46700706E37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C76385D824EED46700706E37 /* LaunchScreen.storyboard */; };
+		C76385E524EED46800706E37 /* SimpleBleFileTransferTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76385E424EED46800706E37 /* SimpleBleFileTransferTests.swift */; };
+		C76385F024EED46800706E37 /* SimpleBleFileTransferUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76385EF24EED46800706E37 /* SimpleBleFileTransferUITests.swift */; };
+		C76385FE24EEEBB700706E37 /* IconUUIDs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76385FD24EEEBB700706E37 /* IconUUIDs.swift */; };
+		C763860024EF050000706E37 /* FileSystemRequestObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76385FF24EF050000706E37 /* FileSystemRequestObject.swift */; };
+		C763860224EF071500706E37 /* ParseIndexFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C763860124EF071500706E37 /* ParseIndexFile.swift */; };
+		C763860424EF079100706E37 /* FileSystemDefines.swift in Sources */ = {isa = PBXBuildFile; fileRef = C763860324EF079100706E37 /* FileSystemDefines.swift */; };
+		C763860624EF116800706E37 /* SerialService2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C763860524EF116800706E37 /* SerialService2.swift */; };
+		C763860824EF11D300706E37 /* RequestAssemblerDisassembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C763860724EF11D300706E37 /* RequestAssemblerDisassembler.swift */; };
+		C763860A24EF137800706E37 /* SerialFileMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = C763860924EF137800706E37 /* SerialFileMessages.swift */; };
+		C763860E24EF198100706E37 /* SmartBellModelFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C763860D24EF198100706E37 /* SmartBellModelFile.swift */; };
+		C763861024EF1A0100706E37 /* FileSystemActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C763860F24EF1A0100706E37 /* FileSystemActions.swift */; };
+		C763861324EF1B5600706E37 /* UpdateFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C763861224EF1B5600706E37 /* UpdateFile.swift */; };
+		C763861624EF1C0600706E37 /* TimeFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C763861524EF1C0600706E37 /* TimeFile.swift */; };
+		C763861824F465D600706E37 /* WifiSettingsFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C763861724F465D600706E37 /* WifiSettingsFile.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C76385E124EED46800706E37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C76385C224EED46500706E37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C76385C924EED46500706E37;
+			remoteInfo = SimpleBleFileTransfer;
+		};
+		C76385EC24EED46800706E37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C76385C224EED46500706E37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C76385C924EED46500706E37;
+			remoteInfo = SimpleBleFileTransfer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		16DF5562B619ED860CEE08CD /* Pods-SimpleBleFileTransfer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleBleFileTransfer.release.xcconfig"; path = "Target Support Files/Pods-SimpleBleFileTransfer/Pods-SimpleBleFileTransfer.release.xcconfig"; sourceTree = "<group>"; };
+		1823BC635D2AF308E02DB0F4 /* Pods_SimpleBleFileTransfer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleBleFileTransfer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CA13E55DA3B576C283E7691 /* Pods-SimpleBleFileTransfer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleBleFileTransfer.debug.xcconfig"; path = "Target Support Files/Pods-SimpleBleFileTransfer/Pods-SimpleBleFileTransfer.debug.xcconfig"; sourceTree = "<group>"; };
+		22E4313C9B5DEE366D863D75 /* Pods-SimpleBleFileTransferTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleBleFileTransferTests.debug.xcconfig"; path = "Target Support Files/Pods-SimpleBleFileTransferTests/Pods-SimpleBleFileTransferTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6D90895D82211D4F65B2264C /* Pods_SimpleBleFileTransfer_SimpleBleFileTransferUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleBleFileTransfer_SimpleBleFileTransferUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8CB942613CBC5837C7A3906 /* Pods-SimpleBleFileTransferTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleBleFileTransferTests.release.xcconfig"; path = "Target Support Files/Pods-SimpleBleFileTransferTests/Pods-SimpleBleFileTransferTests.release.xcconfig"; sourceTree = "<group>"; };
+		C183D490D87742F4F452250D /* Pods-SimpleBleFileTransfer-SimpleBleFileTransferUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleBleFileTransfer-SimpleBleFileTransferUITests.debug.xcconfig"; path = "Target Support Files/Pods-SimpleBleFileTransfer-SimpleBleFileTransferUITests/Pods-SimpleBleFileTransfer-SimpleBleFileTransferUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C6B13CE907C4B2B99F488B06 /* Pods_SimpleBleFileTransferTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleBleFileTransferTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C76385CA24EED46500706E37 /* Write Wifi Settings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Write Wifi Settings.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C76385CD24EED46500706E37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C76385CF24EED46500706E37 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C76385D124EED46500706E37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C76385D424EED46500706E37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C76385D624EED46700706E37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C76385D924EED46700706E37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C76385DB24EED46700706E37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C76385E024EED46800706E37 /* SimpleBleFileTransferTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleBleFileTransferTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C76385E424EED46800706E37 /* SimpleBleFileTransferTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleBleFileTransferTests.swift; sourceTree = "<group>"; };
+		C76385E624EED46800706E37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C76385EB24EED46800706E37 /* SimpleBleFileTransferUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleBleFileTransferUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C76385EF24EED46800706E37 /* SimpleBleFileTransferUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleBleFileTransferUITests.swift; sourceTree = "<group>"; };
+		C76385F124EED46800706E37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C76385FD24EEEBB700706E37 /* IconUUIDs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconUUIDs.swift; sourceTree = "<group>"; };
+		C76385FF24EF050000706E37 /* FileSystemRequestObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSystemRequestObject.swift; sourceTree = "<group>"; };
+		C763860124EF071500706E37 /* ParseIndexFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseIndexFile.swift; sourceTree = "<group>"; };
+		C763860324EF079100706E37 /* FileSystemDefines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSystemDefines.swift; sourceTree = "<group>"; };
+		C763860524EF116800706E37 /* SerialService2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialService2.swift; sourceTree = "<group>"; };
+		C763860724EF11D300706E37 /* RequestAssemblerDisassembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestAssemblerDisassembler.swift; sourceTree = "<group>"; };
+		C763860924EF137800706E37 /* SerialFileMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialFileMessages.swift; sourceTree = "<group>"; };
+		C763860D24EF198100706E37 /* SmartBellModelFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartBellModelFile.swift; sourceTree = "<group>"; };
+		C763860F24EF1A0100706E37 /* FileSystemActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSystemActions.swift; sourceTree = "<group>"; };
+		C763861224EF1B5600706E37 /* UpdateFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateFile.swift; sourceTree = "<group>"; };
+		C763861524EF1C0600706E37 /* TimeFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFile.swift; sourceTree = "<group>"; };
+		C763861724F465D600706E37 /* WifiSettingsFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiSettingsFile.swift; sourceTree = "<group>"; };
+		ECA7F4B0FF4357644F2AD21C /* Pods-SimpleBleFileTransfer-SimpleBleFileTransferUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleBleFileTransfer-SimpleBleFileTransferUITests.release.xcconfig"; path = "Target Support Files/Pods-SimpleBleFileTransfer-SimpleBleFileTransferUITests/Pods-SimpleBleFileTransfer-SimpleBleFileTransferUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C76385C724EED46500706E37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				887FB78485DEC61065388E3A /* Pods_SimpleBleFileTransfer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C76385DD24EED46800706E37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ED1CE502BA9B32CCD6C4BE3 /* Pods_SimpleBleFileTransferTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C76385E824EED46800706E37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E51D227D540C16224B09A3C /* Pods_SimpleBleFileTransfer_SimpleBleFileTransferUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		460A69BEF6B71F5D8B923C40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1823BC635D2AF308E02DB0F4 /* Pods_SimpleBleFileTransfer.framework */,
+				6D90895D82211D4F65B2264C /* Pods_SimpleBleFileTransfer_SimpleBleFileTransferUITests.framework */,
+				C6B13CE907C4B2B99F488B06 /* Pods_SimpleBleFileTransferTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C76385C124EED46500706E37 = {
+			isa = PBXGroup;
+			children = (
+				C76385CC24EED46500706E37 /* SimpleBleFileTransfer */,
+				C76385E324EED46800706E37 /* SimpleBleFileTransferTests */,
+				C76385EE24EED46800706E37 /* SimpleBleFileTransferUITests */,
+				C76385CB24EED46500706E37 /* Products */,
+				F0D824929A657FF5CC7E738F /* Pods */,
+				460A69BEF6B71F5D8B923C40 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C76385CB24EED46500706E37 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C76385CA24EED46500706E37 /* Write Wifi Settings.app */,
+				C76385E024EED46800706E37 /* SimpleBleFileTransferTests.xctest */,
+				C76385EB24EED46800706E37 /* SimpleBleFileTransferUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C76385CC24EED46500706E37 /* SimpleBleFileTransfer */ = {
+			isa = PBXGroup;
+			children = (
+				C76385CD24EED46500706E37 /* AppDelegate.swift */,
+				C76385CF24EED46500706E37 /* SceneDelegate.swift */,
+				C76385D124EED46500706E37 /* ViewController.swift */,
+				C76385D324EED46500706E37 /* Main.storyboard */,
+				C76385D624EED46700706E37 /* Assets.xcassets */,
+				C76385D824EED46700706E37 /* LaunchScreen.storyboard */,
+				C76385DB24EED46700706E37 /* Info.plist */,
+				C763860F24EF1A0100706E37 /* FileSystemActions.swift */,
+				C763860324EF079100706E37 /* FileSystemDefines.swift */,
+				C76385FF24EF050000706E37 /* FileSystemRequestObject.swift */,
+				C76385FD24EEEBB700706E37 /* IconUUIDs.swift */,
+				C763860924EF137800706E37 /* SerialFileMessages.swift */,
+				C763860524EF116800706E37 /* SerialService2.swift */,
+				C763860724EF11D300706E37 /* RequestAssemblerDisassembler.swift */,
+				C763861424EF1BE200706E37 /* FileTypes */,
+				C763861924F4739100706E37 /* Parsers */,
+			);
+			path = SimpleBleFileTransfer;
+			sourceTree = "<group>";
+		};
+		C76385E324EED46800706E37 /* SimpleBleFileTransferTests */ = {
+			isa = PBXGroup;
+			children = (
+				C76385E424EED46800706E37 /* SimpleBleFileTransferTests.swift */,
+				C76385E624EED46800706E37 /* Info.plist */,
+			);
+			path = SimpleBleFileTransferTests;
+			sourceTree = "<group>";
+		};
+		C76385EE24EED46800706E37 /* SimpleBleFileTransferUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C76385EF24EED46800706E37 /* SimpleBleFileTransferUITests.swift */,
+				C76385F124EED46800706E37 /* Info.plist */,
+			);
+			path = SimpleBleFileTransferUITests;
+			sourceTree = "<group>";
+		};
+		C763861424EF1BE200706E37 /* FileTypes */ = {
+			isa = PBXGroup;
+			children = (
+				C763860D24EF198100706E37 /* SmartBellModelFile.swift */,
+				C763861224EF1B5600706E37 /* UpdateFile.swift */,
+				C763861524EF1C0600706E37 /* TimeFile.swift */,
+				C763860124EF071500706E37 /* ParseIndexFile.swift */,
+				C763861724F465D600706E37 /* WifiSettingsFile.swift */,
+			);
+			path = FileTypes;
+			sourceTree = "<group>";
+		};
+		C763861924F4739100706E37 /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Parsers;
+			sourceTree = "<group>";
+		};
+		F0D824929A657FF5CC7E738F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1CA13E55DA3B576C283E7691 /* Pods-SimpleBleFileTransfer.debug.xcconfig */,
+				16DF5562B619ED860CEE08CD /* Pods-SimpleBleFileTransfer.release.xcconfig */,
+				C183D490D87742F4F452250D /* Pods-SimpleBleFileTransfer-SimpleBleFileTransferUITests.debug.xcconfig */,
+				ECA7F4B0FF4357644F2AD21C /* Pods-SimpleBleFileTransfer-SimpleBleFileTransferUITests.release.xcconfig */,
+				22E4313C9B5DEE366D863D75 /* Pods-SimpleBleFileTransferTests.debug.xcconfig */,
+				A8CB942613CBC5837C7A3906 /* Pods-SimpleBleFileTransferTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C76385C924EED46500706E37 /* SimpleBleFileTransfer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C76385F424EED46800706E37 /* Build configuration list for PBXNativeTarget "SimpleBleFileTransfer" */;
+			buildPhases = (
+				E7F5A62212C23455E60C4ABB /* [CP] Check Pods Manifest.lock */,
+				C76385C624EED46500706E37 /* Sources */,
+				C76385C724EED46500706E37 /* Frameworks */,
+				C76385C824EED46500706E37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleBleFileTransfer;
+			productName = SimpleBleFileTransfer;
+			productReference = C76385CA24EED46500706E37 /* Write Wifi Settings.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C76385DF24EED46800706E37 /* SimpleBleFileTransferTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C76385F724EED46800706E37 /* Build configuration list for PBXNativeTarget "SimpleBleFileTransferTests" */;
+			buildPhases = (
+				CABBAE12C5E50DC9F46C4F8C /* [CP] Check Pods Manifest.lock */,
+				C76385DC24EED46800706E37 /* Sources */,
+				C76385DD24EED46800706E37 /* Frameworks */,
+				C76385DE24EED46800706E37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C76385E224EED46800706E37 /* PBXTargetDependency */,
+			);
+			name = SimpleBleFileTransferTests;
+			productName = SimpleBleFileTransferTests;
+			productReference = C76385E024EED46800706E37 /* SimpleBleFileTransferTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C76385EA24EED46800706E37 /* SimpleBleFileTransferUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C76385FA24EED46800706E37 /* Build configuration list for PBXNativeTarget "SimpleBleFileTransferUITests" */;
+			buildPhases = (
+				4DF69027EE01A81B1E082BFC /* [CP] Check Pods Manifest.lock */,
+				C76385E724EED46800706E37 /* Sources */,
+				C76385E824EED46800706E37 /* Frameworks */,
+				C76385E924EED46800706E37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C76385ED24EED46800706E37 /* PBXTargetDependency */,
+			);
+			name = SimpleBleFileTransferUITests;
+			productName = SimpleBleFileTransferUITests;
+			productReference = C76385EB24EED46800706E37 /* SimpleBleFileTransferUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C76385C224EED46500706E37 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = ifit;
+				TargetAttributes = {
+					C76385C924EED46500706E37 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					C76385DF24EED46800706E37 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = C76385C924EED46500706E37;
+					};
+					C76385EA24EED46800706E37 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = C76385C924EED46500706E37;
+					};
+				};
+			};
+			buildConfigurationList = C76385C524EED46500706E37 /* Build configuration list for PBXProject "SimpleBleFileTransfer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C76385C124EED46500706E37;
+			productRefGroup = C76385CB24EED46500706E37 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C76385C924EED46500706E37 /* SimpleBleFileTransfer */,
+				C76385DF24EED46800706E37 /* SimpleBleFileTransferTests */,
+				C76385EA24EED46800706E37 /* SimpleBleFileTransferUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C76385C824EED46500706E37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C76385DA24EED46700706E37 /* LaunchScreen.storyboard in Resources */,
+				C76385D724EED46700706E37 /* Assets.xcassets in Resources */,
+				C76385D524EED46500706E37 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C76385DE24EED46800706E37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C76385E924EED46800706E37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4DF69027EE01A81B1E082BFC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleBleFileTransfer-SimpleBleFileTransferUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CABBAE12C5E50DC9F46C4F8C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleBleFileTransferTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7F5A62212C23455E60C4ABB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleBleFileTransfer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C76385C624EED46500706E37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C763860E24EF198100706E37 /* SmartBellModelFile.swift in Sources */,
+				C763861824F465D600706E37 /* WifiSettingsFile.swift in Sources */,
+				C763860024EF050000706E37 /* FileSystemRequestObject.swift in Sources */,
+				C763861624EF1C0600706E37 /* TimeFile.swift in Sources */,
+				C763861324EF1B5600706E37 /* UpdateFile.swift in Sources */,
+				C76385D224EED46500706E37 /* ViewController.swift in Sources */,
+				C763860624EF116800706E37 /* SerialService2.swift in Sources */,
+				C763860224EF071500706E37 /* ParseIndexFile.swift in Sources */,
+				C763860824EF11D300706E37 /* RequestAssemblerDisassembler.swift in Sources */,
+				C763860A24EF137800706E37 /* SerialFileMessages.swift in Sources */,
+				C76385FE24EEEBB700706E37 /* IconUUIDs.swift in Sources */,
+				C763861024EF1A0100706E37 /* FileSystemActions.swift in Sources */,
+				C76385CE24EED46500706E37 /* AppDelegate.swift in Sources */,
+				C763860424EF079100706E37 /* FileSystemDefines.swift in Sources */,
+				C76385D024EED46500706E37 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C76385DC24EED46800706E37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C76385E524EED46800706E37 /* SimpleBleFileTransferTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C76385E724EED46800706E37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C76385F024EED46800706E37 /* SimpleBleFileTransferUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C76385E224EED46800706E37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C76385C924EED46500706E37 /* SimpleBleFileTransfer */;
+			targetProxy = C76385E124EED46800706E37 /* PBXContainerItemProxy */;
+		};
+		C76385ED24EED46800706E37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C76385C924EED46500706E37 /* SimpleBleFileTransfer */;
+			targetProxy = C76385EC24EED46800706E37 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C76385D324EED46500706E37 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C76385D424EED46500706E37 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C76385D824EED46700706E37 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C76385D924EED46700706E37 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C76385F224EED46800706E37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C76385F324EED46800706E37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C76385F524EED46800706E37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CA13E55DA3B576C283E7691 /* Pods-SimpleBleFileTransfer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 4XEZV4GQE9;
+				INFOPLIST_FILE = SimpleBleFileTransfer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ifit.SimpleBleFileTransfer;
+				PRODUCT_NAME = "Write Wifi Settings";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C76385F624EED46800706E37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16DF5562B619ED860CEE08CD /* Pods-SimpleBleFileTransfer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 4XEZV4GQE9;
+				INFOPLIST_FILE = SimpleBleFileTransfer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ifit.SimpleBleFileTransfer;
+				PRODUCT_NAME = "Write Wifi Settings";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C76385F824EED46800706E37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22E4313C9B5DEE366D863D75 /* Pods-SimpleBleFileTransferTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ESR6X3SRBQ;
+				INFOPLIST_FILE = SimpleBleFileTransferTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ifit.SimpleBleFileTransferTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleBleFileTransfer.app/SimpleBleFileTransfer";
+			};
+			name = Debug;
+		};
+		C76385F924EED46800706E37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8CB942613CBC5837C7A3906 /* Pods-SimpleBleFileTransferTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ESR6X3SRBQ;
+				INFOPLIST_FILE = SimpleBleFileTransferTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ifit.SimpleBleFileTransferTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleBleFileTransfer.app/SimpleBleFileTransfer";
+			};
+			name = Release;
+		};
+		C76385FB24EED46800706E37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C183D490D87742F4F452250D /* Pods-SimpleBleFileTransfer-SimpleBleFileTransferUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ESR6X3SRBQ;
+				INFOPLIST_FILE = SimpleBleFileTransferUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ifit.SimpleBleFileTransferUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SimpleBleFileTransfer;
+			};
+			name = Debug;
+		};
+		C76385FC24EED46800706E37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECA7F4B0FF4357644F2AD21C /* Pods-SimpleBleFileTransfer-SimpleBleFileTransferUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ESR6X3SRBQ;
+				INFOPLIST_FILE = SimpleBleFileTransferUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ifit.SimpleBleFileTransferUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SimpleBleFileTransfer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C76385C524EED46500706E37 /* Build configuration list for PBXProject "SimpleBleFileTransfer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C76385F224EED46800706E37 /* Debug */,
+				C76385F324EED46800706E37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C76385F424EED46800706E37 /* Build configuration list for PBXNativeTarget "SimpleBleFileTransfer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C76385F524EED46800706E37 /* Debug */,
+				C76385F624EED46800706E37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C76385F724EED46800706E37 /* Build configuration list for PBXNativeTarget "SimpleBleFileTransferTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C76385F824EED46800706E37 /* Debug */,
+				C76385F924EED46800706E37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C76385FA24EED46800706E37 /* Build configuration list for PBXNativeTarget "SimpleBleFileTransferUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C76385FB24EED46800706E37 /* Debug */,
+				C76385FC24EED46800706E37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C76385C224EED46500706E37 /* Project object */;
+}
