@@ -31,5 +31,10 @@ class IconUUIDs: NSObject {
     public static let IconBLESerialService2Tx = CBUUID.init(string: "7807ca19-6598-4c00-bc25-2fcef5d14229")
     public static let IconBLESerialService2Rx = CBUUID.init(string: "7807ca1a-6598-4c00-bc25-2fcef5d14229")
     public static let IconBLESerialService2TxDataRdy = CBUUID.init(string: "7807ca1b-6598-4c00-bc25-2fcef5d14229")
+    
+    //Smart Bell
+    public static let IconSmartWeightService = CBUUID.init(string: "A132ED5D-BEDA-4876-A1FC-1AF69CBA529D")
+    public static let IconSmartWeightChar_Data = CBUUID.init(string: "A132ED5E-BEDA-4876-A1FC-1AF69CBA529D")
+    public static let IconSmartWeightChar_Reset = CBUUID.init(string: "A132ED5F-BEDA-4876-A1FC-1AF69CBA529D")
 
 }

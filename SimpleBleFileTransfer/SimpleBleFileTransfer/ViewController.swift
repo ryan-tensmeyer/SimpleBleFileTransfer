@@ -30,6 +30,7 @@ class ViewController: UIViewController, CBCentralManagerDelegate, UIPickerViewDe
     
     @IBOutlet weak var picker: UIPickerView!
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var label_repCount: UILabel!
     
     @IBOutlet weak var textView: UITextView!
     private var debugString = ""
@@ -61,6 +62,8 @@ class ViewController: UIViewController, CBCentralManagerDelegate, UIPickerViewDe
         self.picker.dataSource = self
         
         debugString = ""
+        
+        label_repCount.font = label.font.withSize(self.view.frame.height * 0.04)
         
     }
     
@@ -103,7 +106,7 @@ class ViewController: UIViewController, CBCentralManagerDelegate, UIPickerViewDe
     public func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
         
         if let name = advertisementData["kCBAdvDataLocalName"] {    //filter devices by name
-            if name as! String == "RyanBT" {
+            if true /*name as! String == "RyanBT"*/ {
                 Print("\nName   : \(name)")
                 Print("UUID   : \(peripheral.identifier)")
                 Print("RSSI   : \(RSSI)")
@@ -141,31 +144,37 @@ class ViewController: UIViewController, CBCentralManagerDelegate, UIPickerViewDe
     func peripheral(_ peripheral: CBPeripheral, didDiscoverServices error: Error?) {
         if let services = peripheral.services {
             for service in services {
-                if service.uuid == IconUUIDs.ifitControlService {
-                    Print("ifitControlService found")
-                    //Now kick off discovery of characteristics
-                    peripheral.discoverCharacteristics([IconUUIDs.ifitControlServiceCmdChar,
-                                                             IconUUIDs.ifitControlServiceRespChar,
-                                                             IconUUIDs.ifitControlServiceCmdQueryChar,
-                                                             IconUUIDs.ifitControlServiceCmdQueryRespChar], for: service)
-                    return
-                }
-                if service.uuid == IconUUIDs.IconBLESerialService {
-                    Print("IconBLESerialService found")
-                    //Now kick off discovery of characteristics
-                    peripheral.discoverCharacteristics([IconUUIDs.IconBLESerialServiceTx,
-                                                             IconUUIDs.IconBLESerialServiceRx], for: service)
-                    return
-                }
-                if service.uuid == IconUUIDs.IconBLESerialService2 {
-                    Print("IconBLESerialService2 found")
-                    IconBLESerialService2_found = true
-                    characterists_found = 0
-                    //Now kick off discovery of characteristics
+                print(service.uuid)
+//                if service.uuid == IconUUIDs.ifitControlService {
+//                    Print("ifitControlService found")
+//                    //Now kick off discovery of characteristics
+//                    peripheral.discoverCharacteristics([IconUUIDs.ifitControlServiceCmdChar,
+//                                                             IconUUIDs.ifitControlServiceRespChar,
+//                                                             IconUUIDs.ifitControlServiceCmdQueryChar,
+//                                                             IconUUIDs.ifitControlServiceCmdQueryRespChar], for: service)
+//                    return
+//                }
+//                if service.uuid == IconUUIDs.IconBLESerialService {
+//                    Print("IconBLESerialService found")
+//                    //Now kick off discovery of characteristics
+//                    peripheral.discoverCharacteristics([IconUUIDs.IconBLESerialServiceTx,
+//                                                             IconUUIDs.IconBLESerialServiceRx], for: service)
+//                    return
+//                }
+//                if service.uuid == IconUUIDs.IconBLESerialService2 {
+//                    Print("IconBLESerialService2 found")
+//                    IconBLESerialService2_found = true
+//                    characterists_found = 0
+//                    //Now kick off discovery of characteristics
                     peripheral.discoverCharacteristics([IconUUIDs.IconBLESerialService2Tx,
                                                              IconUUIDs.IconBLESerialService2Rx,
                                                              IconUUIDs.IconBLESerialService2TxDataRdy], for: service)
-                    return
+//                    return
+//                }
+                
+                if service.uuid == IconUUIDs.IconSmartWeightService {
+                    m_service = service
+                    peripheral.discoverCharacteristics([IconUUIDs.IconSmartWeightChar_Data, IconUUIDs.IconSmartWeightChar_Reset], for: service)
                 }
             }
         }
@@ -176,29 +185,12 @@ class ViewController: UIViewController, CBCentralManagerDelegate, UIPickerViewDe
     func peripheral(_ peripheral: CBPeripheral, didDiscoverCharacteristicsFor service: CBService, error: Error?) {
         if let characteristics = service.characteristics {
             for characteristic in characteristics {
-                if characteristic.uuid == IconUUIDs.ifitControlServiceCmdChar {
-                    Print("ifitControlServiceCmdChar characteristic found")
-                }else if characteristic.uuid == IconUUIDs.ifitControlServiceRespChar {
-                    Print("ifitControlServiceRespChar characteristic found")
-                }else if characteristic.uuid == IconUUIDs.ifitControlServiceCmdQueryChar {
-                    Print("ifitControlServiceCmdQueryChar characteristic found")
-                }else if characteristic.uuid == IconUUIDs.ifitControlServiceCmdQueryRespChar {
-                    Print("ifitControlServiceCmdQueryRespChar characteristic found")
-                }else if characteristic.uuid == IconUUIDs.IconBLESerialServiceTx {
-                    Print("IconBLESerialServiceTx characteristic found")
-                }else if characteristic.uuid == IconUUIDs.IconBLESerialServiceRx {
-                    Print("IconBLESerialServiceRx characteristic found")
-                }else if characteristic.uuid == IconUUIDs.IconBLESerialService2Tx {
-                    Print("IconBLESerialService2Tx characteristic found")
-                    characterists_found += 1
-                }else if characteristic.uuid == IconUUIDs.IconBLESerialService2Rx {
-                    Print("IconBLESerialService2Rx characteristic found")
-                    characterists_found += 1
-                }else if characteristic.uuid == IconUUIDs.IconBLESerialService2TxDataRdy {
-                    Print("IconBLESerialService2TxDataRdy characteristic found")
-                    characterists_found += 1
+                if characteristic.uuid == IconUUIDs.IconSmartWeightChar_Data {
+                    Print("IconSmartWeightChar_Data characteristic found")
                     self.peripheral.setNotifyValue(true, for: characteristic)
                     self.peripheral.delegate = self
+                }else if characteristic.uuid == IconUUIDs.IconSmartWeightChar_Reset {
+                    Print("IconSmartWeightChar_Reset characteristic found")
                 }
             }
         }
@@ -294,6 +286,32 @@ class ViewController: UIViewController, CBCentralManagerDelegate, UIPickerViewDe
     @IBOutlet weak var Button_connectAndSend: UIButton!
     @IBAction func Button_connectAndSend(_ sender: Any) {
         connectToDevice()
+    }
+    
+    //var m_service: CBService?
+    @IBOutlet weak var Button_Clear: UIButton!
+    @IBAction func Button_Clear_Rep_Data(_ sender: Any) {
+        
+        if m_service == nil {
+            Print("Not ready")
+            return
+        }
+        
+//        if service.uuid == IconUUIDs.IconSmartWeight {
+//            peripheral.discoverCharacteristics([IconUUIDs.IconSmartWeightChar_Data, IconUUIDs.IconSmartWeightChar_Reset], for: service)
+//        }
+
+        let ss2DataRx: CBCharacteristic = get_ss2Data(m_service: m_service!, uuid: IconUUIDs.IconSmartWeightChar_Reset)
+
+        if(m_service!.characteristics?.count == 0)
+        {
+            Print("ERROR: Can't start write because there is no valid SS2 Rx characteristic!")
+        }
+
+        writeData = [0x0a]
+        let data: Data = Data(bytes: writeData, count: writeData.count)
+        Print("Data to send: \([UInt8](data))")
+        peripheral.writeValue(data, for: ss2DataRx, type: CBCharacteristicWriteType.withResponse)
     }
     
     func connectToDevice() {
@@ -1251,6 +1269,13 @@ class ViewController: UIViewController, CBCentralManagerDelegate, UIPickerViewDe
         return fileData
     }
     
+//    func peripheral(_ peripheral: CBPeripheral, didUpdateNotificationStateFor characteristic: CBCharacteristic, error: Error?) {
+//        print("here")
+//    }
+    
+    
+    var characteristic_write: CBCharacteristic?
+    
 }
 
 
@@ -1282,6 +1307,18 @@ extension ViewController: CBPeripheralDelegate {
                 }
 
             }
+            
+        case IconUUIDs.IconSmartWeightChar_Data:
+            print(characteristic.value ?? "no value")
+            if let characteristicData = characteristic.value {
+                let byteArray = [UInt8](characteristicData)
+                Print("Data: \(byteArray)")
+
+                label_repCount.text = "\(byteArray[1])"
+                characteristic_write = characteristic
+            }
+            
+            
         default:
             print("Unhandled Characteristic UUID: \(characteristic.uuid)")
       }

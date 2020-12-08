@@ -612,7 +612,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4XEZV4GQE9;
 				INFOPLIST_FILE = SimpleBleFileTransfer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -620,8 +620,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ifit.SimpleBleFileTransfer;
+				MARKETING_VERSION = 1.0.201204;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ifit.SimpleSmartWeight;
 				PRODUCT_NAME = "Write Wifi Settings";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -634,7 +634,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4XEZV4GQE9;
 				INFOPLIST_FILE = SimpleBleFileTransfer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -642,8 +642,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ifit.SimpleBleFileTransfer;
+				MARKETING_VERSION = 1.0.201204;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ifit.SimpleSmartWeight;
 				PRODUCT_NAME = "Write Wifi Settings";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
