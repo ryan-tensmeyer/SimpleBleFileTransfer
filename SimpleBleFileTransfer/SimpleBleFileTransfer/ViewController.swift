@@ -103,7 +103,7 @@ class ViewController: UIViewController, CBCentralManagerDelegate, UIPickerViewDe
     public func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
         
         if let name = advertisementData["kCBAdvDataLocalName"] {    //filter devices by name
-            if name as! String == "RyanBT" {
+            if (name as! String).contains("Samsung") == false && (name as! String == "RyanBT" || name as! String != "RyanBT") {
                 Print("\nName   : \(name)")
                 Print("UUID   : \(peripheral.identifier)")
                 Print("RSSI   : \(RSSI)")
@@ -265,6 +265,21 @@ class ViewController: UIViewController, CBCentralManagerDelegate, UIPickerViewDe
         startCommunication(m_service: m_service!)
     }
     
+    func getVersionFile()
+    {
+        Print("getVersionFile")
+        setFileType(.SMARTBELL_MODEL)
+        
+        for service in peripheral.services! {
+            if service.uuid == IconUUIDs.IconBLESerialService2 {
+                m_service = service
+                break
+            }
+        }
+        
+        startCommunication(m_service: m_service!)
+    }
+    
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -336,6 +351,16 @@ class ViewController: UIViewController, CBCentralManagerDelegate, UIPickerViewDe
             getWifiSettingsFile()
         }
         //getTimeFile()
+    }
+    
+    @IBAction func Button_readVersionFile(_ sender: Any) {
+        if peripheral == nil {
+            Print("You must be connected to the device")
+        } else if indexFile.indices.count == 0 {
+            Print("Index file has not beed read")
+        }else {
+            getVersionFile()
+        }
     }
     
     @IBAction func Button_Clear(_ sender: Any) {
